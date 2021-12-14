@@ -1,7 +1,7 @@
 const header = {
   // all the properties are optional - can be left empty or deleted
   homepage: 'https://mejialaguna.github.io/P-folio/',
-  title: 'React',
+  title: 'JS/React',
 }
 
 const about = {
