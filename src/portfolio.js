@@ -118,7 +118,6 @@ const skills = [
   'graphQl',
   'Heroku',
   'Git',
-  'CI/CD',
   'Jest',
 ]
 
