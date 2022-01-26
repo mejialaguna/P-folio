@@ -15,8 +15,10 @@ const ProjectContainer = ({ project }) => (
             {item}
           </li>
         ))}
+        <br />
       </ul>
     )}
+    <p style={{marginBottom: 20}}>{project.DeploymentSite}</p>
 
     {project.sourceCode && (
       <a
