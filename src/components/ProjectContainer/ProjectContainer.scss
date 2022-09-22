@@ -1,0 +1,56 @@
+@import '../../sass/abstracts/mixins';
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+
+  &_side {
+    // transition-delay: 100ms;
+    // transition-duration: 1s;
+    backface-visibility: hidden;
+    height: 27rem;
+    transition: all 1s ease;
+
+    &--front {
+      @include frontAndBack--card;
+
+      .project__description {
+        margin-top: 1em;
+        margin-bottom: 1rem;
+      }
+
+      .project .link--icon {
+        margin-left: 0.5em;
+      }
+    }
+
+    &--back {
+      @include frontAndBack--card;
+      transform: rotateY(180deg);
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      .project__stack {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 1.2em 0;
+
+        .project__stack-item {
+          margin: 0.5em;
+          font-weight: 500;
+          font-size: 0.8rem;
+          color: var(--clr-fg-alt);
+        }
+      }
+    }
+  }
+  &:hover &_side--front {
+    transform: rotateY(180deg);
+  }
+  &:hover &_side--back {
+    transform: rotateY(0deg);
+  }
+}

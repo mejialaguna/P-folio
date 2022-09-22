@@ -1,23 +1,18 @@
-@mixin moveOnLoadAnimation($moveInFrom, $duration) {
-  animation-name: $moveInFrom;
-  animation-duration: $duration;
-  animation-timing-function: ease-out;
-  // we can use mixin without argument as well
-}
+@import '../../sass/abstracts/mixins';
 
 .about {
   flex-direction: column;
   margin-top: 3em;
-  backface-visibility: hidden;
+  backface-visibility: hidden; // to avoid the flicker on the animations below
 
   .moveLeft {
     @include moveOnLoadAnimation(moveInLeft, 1s);
-
-    &__name {
-      color: var(--clr-primary);
-    }
+    // animations coming from sass/abstracts/mixins
   }
 
+  &__name {
+    color: --clr-primary;
+  }
   &__role {
     margin-top: 1.2em;
     @include moveOnLoadAnimation(moveInRight, 900ms);
