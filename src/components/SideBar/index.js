@@ -3,36 +3,36 @@ import './index.scss'
 function SideBar() {
   return (
     <div className='navigation'>
-      <input type='checkbox' className='navigation_checkbox' />
+      <input type='checkbox' className='navigation_checkbox' id='navi-toggle' />
       <label htmlFor='navi-toggle' className='navigation_button'>
-        MENU
+        <span className='navigation_icon'>&nbsp;</span>
       </label>
       <div className='navigation_background'>&nbsp;</div>
       <nav className='navigation_nav'>
         <ul className='navigation_list'>
           <li className='navigation_item'>
             <a href='/' className='navigation_link'>
-              about
+              01 about
             </a>
           </li>
           <li className='navigation_item'>
             <a href='/' className='navigation_link'>
-              your
+              02 your
             </a>
           </li>
           <li className='navigation_item'>
             <a href='/' className='navigation_link'>
-              popular
+              03 popular
             </a>
           </li>
           <li className='navigation_item'>
             <a href='/' className='navigation_link'>
-              stories
+              04 stories
             </a>
           </li>
           <li className='navigation_item'>
             <a href='/' className='navigation_link'>
-              now
+              05 now
             </a>
           </li>
         </ul>

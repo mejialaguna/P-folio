@@ -1,4 +1,5 @@
 @mixin moveOnLoadAnimation($moveInFrom, $duration) {
+  // all of these are only for animations
   animation-name: $moveInFrom; // argument
   animation-duration: $duration;
   animation-timing-function: ease-out;
