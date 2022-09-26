@@ -60,6 +60,7 @@
     margin: 1rem;
   }
 
+  // inside of the sidebar
   &_link {
     &:link,
     &:visited {
@@ -90,7 +91,7 @@
     }
   }
 
-  // functionality
+  // functionality to make the background from the side bar expand
   &_checkbox:checked ~ &_background {
     // this 2 element are sibling thats why we are using ~ symbol
     transform: scale(100);
@@ -121,7 +122,7 @@
       content: '';
       position: absolute;
       left: 0;
-      transition: all 400ms;
+      transition: all 1s;
     }
 
     // handling each one separately
@@ -150,12 +151,10 @@
   &_checkbox:checked + &_button &_icon::before {
     top: 0;
     transform: rotate(360deg + 45deg);
-    transition: all 1s;
   }
 
   &_checkbox:checked + &_button &_icon::after {
     top: 0;
     transform: rotate(-360deg + (-45deg));
-    transition: all 1s;
   }
 }
