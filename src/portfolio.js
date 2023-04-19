@@ -22,7 +22,7 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: 'lil-tweet',
+    name: 'Lil-Tweet',
     description:
       'A small version of tweeter were you can leave your thoughts and let others leave their comments about you thought. You able to create, update or delete your messages. ',
     stack: [
@@ -67,46 +67,39 @@ const projects = [
     livePreview: 'https://lil-tweet.herokuapp.com/',
   },
   {
-    name: 'Dream-Home',
+    name: 'Journey Diary',
     description:
-      'Real estate applications aimed to ease the process of property search easy. These app is designed in a way that helps buyers, sellers, realtors, landlords, and investors to find all for sell properties quickly and conveniently',
+      "A daily record, private, the writer's own experiences, observations, feelings, attitudes, etc. a book for keeping such a record. a book or pad containing images , in which to note appointments and the like.",
     stack: [
       'CSS',
       '|',
-      'JavaScript',
+      'JavaScript/ES6',
       '|',
-      'Node',
+      "React",
       '|',
-      'express',
+      "Vite",
       '|',
-      'ES6',
+      "React-Dom",
       '|',
-      'Node',
+      "React-Redux",
       '|',
-      'mySQL 2',
+      "React-Router-Dom",
       '|',
-      'Sequelize',
+      "Reduxjs/toolkit",
       '|',
-      'Nodemon',
+      "Firebase",
       '|',
-      'dotenv',
+       "mui/material",
       '|',
       'axios',
       '|',
-      'Handlebars',
-      '|',
-      'bcrypt',
-      '|',
-      'connect-session-sequelize',
-      '|',
-      'Jest',
     ],
-    DeploymentSite: 'Deployment site: Heroku',
-    sourceCode: 'https://github.com/mejialaguna/Dream-Home.git',
-    livePreview: 'https://sheltered-eyrie-12242.herokuapp.com/',
+    DeploymentSite: 'Deployment site: Vercel',
+    sourceCode: 'https://github.com/mejialaguna/Journal_Diary',
+    livePreview: 'https://journal-diary-nine.vercel.app/auth/login',
   },
   {
-    name: 'global-trade',
+    name: 'Global-Trade',
     description:
       'Global Trade is a Single Page E-commerce Web Application. That allows all users to search for products based on categories, from the comfort of their home.',
     stack: [
@@ -137,7 +130,7 @@ const projects = [
     livePreview: 'https://still-eyrie-57534.herokuapp.com/',
   },
   {
-    name: 'Netflix Style - youTube',
+    name: 'Netflix Style - YouTube',
     description:
       'Restricted version of youTube & netflix for under age kids , dont have to worry about inappropriate context easy to use and password-less entry',
     stack: [
@@ -208,7 +201,6 @@ const skills = [
   'vercel',
 ]
 const contact = {
-  // email is optional - if left empty Contact section won't show up
   email: 'mejialaguna@yahoo.com',
 }
 
